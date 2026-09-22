@@ -1,0 +1,14 @@
+<h1>تحديث بشأن طلب تسجيل الشركة</h1>
+<p>عزيزي/عزيزتي <strong>{{ contactName }}</strong>،</p>
+<p>نشكرك على اهتمامك بالتسجيل في منصة Bling لشركة <strong>{{ companyName }}</strong>.</p>
+<p>نود إفادتك بأنه تم مراجعة الطلب المقدم من قبل الإدارة، وللأسف تعذر قبول الطلب في الوقت الحالي.</p>
+
+{{#if rejectionReason}}
+<div class="credentials-box" style="border-right-color: #ef4444; background-color: #fef2f2;">
+    <span class="label" style="color: #991b1b;">سبب الرفض:</span>
+    <span class="value" style="color: #7f1d1d;">{{ rejectionReason }}</span>
+</div>
+{{/if}}
+
+<p>يمكنك مراجعة البيانات وإعادة تقديم طلب جديد بعد استيفاء الشروط المطلوبة.</p>
+<p>إذا كان لديك أي استفسارات، يرجى التواصل مع فريق الدعم الفني.</p>

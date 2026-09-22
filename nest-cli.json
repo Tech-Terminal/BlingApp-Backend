@@ -1,0 +1,80 @@
+{
+  "monorepo": true,
+  "root": "apps/admin-api",
+  "sourceRoot": "apps/admin-api/src",
+  "compilerOptions": {
+    "tsConfigPath": "apps/admin-api/tsconfig.app.json",
+    "deleteOutDir": true
+  },
+  "projects": {
+    "admin-api": {
+      "type": "application",
+      "root": "apps/admin-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/admin-api/src",
+      "compilerOptions": {
+        "webpack": true,
+        "tsConfigPath": "apps/admin-api/tsconfig.app.json",
+        "deleteOutDir": true
+      }
+    },
+    "public-api": {
+      "type": "application",
+      "root": "apps/public-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/public-api/src",
+      "compilerOptions": {
+        "webpack": true,
+        "tsConfigPath": "apps/public-api/tsconfig.app.json",
+        "deleteOutDir": true
+      }
+    },
+    "seeder": {
+      "type": "application",
+      "root": ".",
+      "entryFile": "seed",
+      "sourceRoot": "scripts",
+      "compilerOptions": {
+        "webpack": true,
+        "tsConfigPath": "tsconfig.json"
+      }
+    },
+    "sync-search": {
+      "type": "application",
+      "root": ".",
+      "entryFile": "sync-search",
+      "sourceRoot": "scripts",
+      "compilerOptions": {
+        "webpack": true,
+        "tsConfigPath": "tsconfig.json"
+      }
+    },
+    "database": {
+      "type": "library",
+      "root": "libs/database",
+      "entryFile": "index",
+      "sourceRoot": "libs/database/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/database/tsconfig.lib.json"
+      }
+    },
+    "common": {
+      "type": "library",
+      "root": "libs/common",
+      "entryFile": "index",
+      "sourceRoot": "libs/common/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common/tsconfig.lib.json"
+      }
+    },
+    "validators": {
+      "type": "library",
+      "root": "libs/validators",
+      "entryFile": "index",
+      "sourceRoot": "libs/validators/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/validators/tsconfig.lib.json"
+      }
+    }
+  }
+}

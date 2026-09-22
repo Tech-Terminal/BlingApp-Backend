@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ subject }}</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9fafb;
+            margin: 0;
+            padding: 0;
+            color: #374151;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e5e7eb;
+        }
+        .header {
+            background-color: #f3f4f6;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .header img {
+            max-width: 150px;
+            height: auto;
+        }
+        .content {
+            padding: 40px 30px;
+            text-align: right;
+        }
+        .content.center {
+            text-align: center;
+        }
+        .content h1 {
+            color: #111827;
+            font-size: 24px;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 24px;
+            color: #4b5563;
+        }
+        .otp-box {
+            background-color: #f8fafc;
+            color: #0f172a;
+            font-size: 36px;
+            font-weight: bold;
+            padding: 18px 40px;
+            display: inline-block;
+            border-radius: 8px;
+            letter-spacing: 6px;
+            margin-bottom: 24px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            text-align: center;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .credentials-box {
+            background-color: #fef2f2;
+            border: 1px solid #fca5a5;
+            color: #991b1b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            text-align: left;
+            direction: ltr;
+        }
+        .credentials-box .label {
+            font-size: 14px;
+            color: #b91c1c;
+            margin-bottom: 5px;
+            display: block;
+        }
+        .credentials-box .value {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: monospace;
+            margin-bottom: 15px;
+            display: block;
+        }
+        .credentials-box .value:last-child {
+            margin-bottom: 0;
+        }
+        .footer {
+            background-color: #f9fafb;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="cid:logo" alt="Bling Logo">
+        </div>
+        
+        <div class="content {{ contentClass }}">
+            {{{ body }}}
+        </div>
+        
+        <div class="footer">
+            &copy; {{ year }} Bling. جميع الحقوق محفوظة.
+        </div>
+    </div>
+</body>
+</html>
