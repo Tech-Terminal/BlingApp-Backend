@@ -13,6 +13,7 @@ export * from './database/src/entities/client.entity';
 export * from './database/src/entities/governorate.entity';
 export * from './database/src/entities/area.entity';
 export * from './database/src/entities/address.entity';
+export * from './database/src/entities/maid.entity';
 
 // enums
 

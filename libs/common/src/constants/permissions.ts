@@ -15,7 +15,8 @@ export enum RESOURCES {
     GOVERNORATE = 'governorate',
     AREA = 'area',
     CLIENT = 'client',
-    ADDRESS = 'address'
+    ADDRESS = 'address',
+    MAID = 'maid'
 }
 
 // Optional map (used for DTOs and Database so roles can have only a few resources)
@@ -72,6 +73,15 @@ export const systemPermissions: RolePermissions = {
         ACTIONS.RESTORE
     ],
     [RESOURCES.ADDRESS]: [
+        ACTIONS.LIST_VIEW,
+        ACTIONS.DETAILED_VIEW,
+        ACTIONS.CREATE,
+        ACTIONS.UPDATE,
+        ACTIONS.DELETE_SOFT,
+        ACTIONS.DELETE_HARD,
+        ACTIONS.RESTORE
+    ],
+    [RESOURCES.MAID]: [
         ACTIONS.LIST_VIEW,
         ACTIONS.DETAILED_VIEW,
         ACTIONS.CREATE,

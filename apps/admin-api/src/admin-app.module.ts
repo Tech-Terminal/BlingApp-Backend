@@ -11,6 +11,7 @@ import { StorageModule } from './modules/storage/storage.module';
 import { LocationModule } from './modules/location/location.module';
 import { ClientModule } from './modules/client/client.module';
 import { AddressModule } from './modules/address/address.module';
+import { MaidModule } from './modules/maid/maid.module';
 import { AuthMiddleware } from './modules/auth/auth.middleware';
 import { PermissionsGuard } from './modules/auth/guards/permissions.guard';
 import { PUBLIC_ROUTES } from './constants/public-routes.constant';
@@ -35,6 +36,7 @@ import { StatisticsModule } from './modules/statistics/statistics.module';
     LocationModule,
     ClientModule,
     AddressModule,
+    MaidModule,
   ],
   providers: [
     {
