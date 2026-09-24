@@ -31,8 +31,12 @@ export class AddressController {
 
   @Permissions(RESOURCES.ADDRESS, ACTIONS.LIST_VIEW)
   @Get()
-  findAll(@Query() pagination: PaginationDto) {
-    return this.addressService.findAll({ pagination });
+  findAll(
+    @Query() pagination: PaginationDto,
+    @Query('clientId', new ParseIntPipe({ optional: true })) clientId?: number,
+    @Query('governorateId', new ParseIntPipe({ optional: true })) governorateId?: number,
+  ) {
+    return this.addressService.findAll({ pagination, clientId, governorateId });
   }
 
   @Permissions(RESOURCES.ADDRESS, ACTIONS.DETAILED_VIEW)

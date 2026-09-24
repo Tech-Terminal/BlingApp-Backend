@@ -6,6 +6,7 @@ export interface FindAllOptions {
   relations?: any;
   select?: any;
   where?: any;
+  order?: any;
   pagination?: PaginationDto;
   searchableFields?: string[];
 }
@@ -19,9 +20,9 @@ export abstract class BaseService<T extends { id: number | string }> {
   }
 
   async findAll(options?: FindAllOptions): Promise<PaginatedResult<T>> {
-    const { relations, select, pagination, where = {} } = options || {};
+    const { relations, select, pagination, where = {}, order } = options || {};
 
-    const findOptions: any = { where };
+    const findOptions: any = { where, order: order || { id: 'DESC' } };
     if (relations) findOptions.relations = relations;
     if (select) findOptions.select = select;
     if (options?.searchableFields) findOptions.searchableFields = options.searchableFields;

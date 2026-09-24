@@ -15,7 +15,7 @@ import { ClientService } from './client.service';
 import { CreateClientDto } from './dto/create-client.dto';
 import { UpdateClientDto } from './dto/update-client.dto';
 import { Permissions } from '../auth/decorators/permissions.decorator';
-import { ACTIONS, RESOURCES, PaginationDto, ResponseMessage } from '@libs/index';
+import { ACTIONS, RESOURCES, PaginationDto, ResponseMessage, InjectIdInterceptor } from '@libs/index';
 
 @Controller('clients')
 @UseInterceptors(ClassSerializerInterceptor)
@@ -49,6 +49,7 @@ export class ClientController {
 
   @Permissions(RESOURCES.CLIENT, ACTIONS.UPDATE)
   @Patch(':id')
+  @UseInterceptors(InjectIdInterceptor)
   @ResponseMessage('Client updated successfully')
   update(
     @Param('id', ParseIntPipe) id: number,

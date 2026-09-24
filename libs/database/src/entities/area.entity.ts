@@ -20,7 +20,7 @@ export class Area {
   @Column({ name: 'governorate_id' })
   governorateId!: number;
 
-  @ManyToOne(() => Governorate, (gov) => gov.areas, { onDelete: 'CASCADE' })
+  @ManyToOne(() => Governorate, (gov) => gov.areas, { onDelete: 'RESTRICT' })
   @JoinColumn({ name: 'governorate_id' })
   governorate?: Governorate;
 

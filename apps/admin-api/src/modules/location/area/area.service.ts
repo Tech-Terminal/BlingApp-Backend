@@ -15,8 +15,9 @@ export class AreaService extends BaseService<Area> {
 
   override async findAll(options?: any): Promise<PaginatedResult<Area>> {
     const where: any = {};
-    if (options?.governorateId) {
-      where.governorateId = options.governorateId;
+    const govId = options?.governorateId || options?.filters?.governorateId;
+    if (govId) {
+      where.governorateId = govId;
     }
 
     return super.findAll({
@@ -34,5 +35,9 @@ export class AreaService extends BaseService<Area> {
     select?: any,
   ): Promise<Area> {
     return super.findOne(id, withDeleted, relations ?? ['governorate'], select);
+  }
+
+  async countByGovernorate(governorateId: number): Promise<number> {
+    return this.repository.count({ where: { governorateId } });
   }
 }

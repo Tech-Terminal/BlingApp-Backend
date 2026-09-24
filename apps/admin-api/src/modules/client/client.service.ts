@@ -48,7 +48,7 @@ export class ClientService extends BaseService<Client> {
   }
 
   async findClientAddresses(clientId: number): Promise<Address[]> {
-    await this.findOne(clientId);
+    await this.findOne(clientId, true);
     return this.addressService.findByClientId(clientId);
   }
 

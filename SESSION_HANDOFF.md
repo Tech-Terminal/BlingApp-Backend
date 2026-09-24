@@ -1,9 +1,9 @@
 # Bling Refactor - Session Handoff & Progress Export
 
-**Date:** September 20, 2026  
+**Date:** September 22, 2026  
 **Latest Commits:**
-- `refactor-bling-backend`: `7ca9be6 feat(auth): invalidate and blocklist previous access token upon token refresh` (pushed to `origin/main`)
-- `refactor-bling-dashboard`: `78b4644 area and governorate to be continued` (pushed to `origin/main`)
+- `refactor-bling-backend`: `60f013b feat(location): support options.filters.governorateId in AreaService`
+- `refactor-bling-dashboard`: `4fc06e9 feat(filter): add global active indicator red circle and use FilterMenu with SearchableSelect in AreaList`
 
 ---
 

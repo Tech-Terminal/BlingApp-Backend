@@ -102,6 +102,11 @@ Repository.prototype.paginate = async function <Entity extends ObjectLiteral>(
 
   typeormOptions.where = where;
 
+  // Default ordering: DESC by id across the entire app
+  if (!typeormOptions.order || Object.keys(typeormOptions.order).length === 0) {
+    typeormOptions.order = { id: 'DESC' } as any;
+  }
+
   const [data, count] = await this.findAndCount({
     ...typeormOptions,
     skip,

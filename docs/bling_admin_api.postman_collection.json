@@ -1349,12 +1349,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates",
+              "raw": "{{adminBaseUrl}}/governorates",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates"
               ],
               "variable": [],
@@ -1411,12 +1410,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates",
+              "raw": "{{adminBaseUrl}}/governorates",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates"
               ],
               "variable": []
@@ -1458,12 +1456,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates/{{id}}",
+              "raw": "{{adminBaseUrl}}/governorates/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates",
                 "{{id}}"
               ],
@@ -1506,12 +1503,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates/{{id}}",
+              "raw": "{{adminBaseUrl}}/governorates/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates",
                 "{{id}}"
               ],
@@ -1559,12 +1555,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates/{{id}}",
+              "raw": "{{adminBaseUrl}}/governorates/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates",
                 "{{id}}"
               ],
@@ -1603,12 +1598,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates/{{id}}/hard-delete",
+              "raw": "{{adminBaseUrl}}/governorates/{{id}}/hard-delete",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates",
                 "{{id}}",
                 "hard-delete"
@@ -1648,12 +1642,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/governorates/restore/{{id}}",
+              "raw": "{{adminBaseUrl}}/governorates/restore/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "governorates",
                 "restore",
                 "{{id}}"
@@ -1698,12 +1691,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas",
+              "raw": "{{adminBaseUrl}}/areas",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas"
               ],
               "variable": [],
@@ -1766,12 +1758,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas",
+              "raw": "{{adminBaseUrl}}/areas",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas"
               ],
               "variable": []
@@ -1813,12 +1804,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas/{{id}}",
+              "raw": "{{adminBaseUrl}}/areas/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas",
                 "{{id}}"
               ],
@@ -1861,12 +1851,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas/{{id}}",
+              "raw": "{{adminBaseUrl}}/areas/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas",
                 "{{id}}"
               ],
@@ -1914,12 +1903,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas/{{id}}",
+              "raw": "{{adminBaseUrl}}/areas/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas",
                 "{{id}}"
               ],
@@ -1958,12 +1946,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas/{{id}}/hard-delete",
+              "raw": "{{adminBaseUrl}}/areas/{{id}}/hard-delete",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas",
                 "{{id}}",
                 "hard-delete"
@@ -2003,12 +1990,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/areas/restore/{{id}}",
+              "raw": "{{adminBaseUrl}}/areas/restore/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "areas",
                 "restore",
                 "{{id}}"
@@ -2145,12 +2131,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/statistics",
+              "raw": "{{adminBaseUrl}}/statistics",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "statistics"
               ],
               "variable": []
@@ -2244,12 +2229,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients",
+              "raw": "{{adminBaseUrl}}/clients",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients"
               ],
               "variable": [],
@@ -2302,12 +2286,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients/{{id}}",
+              "raw": "{{adminBaseUrl}}/clients/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients",
                 "{{id}}"
               ],
@@ -2346,12 +2329,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients/{{id}}/addresses",
+              "raw": "{{adminBaseUrl}}/clients/{{id}}/addresses",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients",
                 "{{id}}",
                 "addresses"
@@ -2395,12 +2377,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients/{{id}}",
+              "raw": "{{adminBaseUrl}}/clients/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients",
                 "{{id}}"
               ],
@@ -2448,12 +2429,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients/{{id}}",
+              "raw": "{{adminBaseUrl}}/clients/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients",
                 "{{id}}"
               ],
@@ -2492,12 +2472,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients/{{id}}/hard-delete",
+              "raw": "{{adminBaseUrl}}/clients/{{id}}/hard-delete",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients",
                 "{{id}}",
                 "hard-delete"
@@ -2537,12 +2516,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/clients/restore/{{id}}",
+              "raw": "{{adminBaseUrl}}/clients/restore/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "clients",
                 "restore",
                 "{{id}}"
@@ -2587,12 +2565,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses",
+              "raw": "{{adminBaseUrl}}/addresses",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses"
               ],
               "variable": [],
@@ -2645,12 +2622,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses/{{id}}",
+              "raw": "{{adminBaseUrl}}/addresses/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses",
                 "{{id}}"
               ],
@@ -2693,12 +2669,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses",
+              "raw": "{{adminBaseUrl}}/addresses",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses"
               ],
               "variable": []
@@ -2744,12 +2719,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses/{{id}}",
+              "raw": "{{adminBaseUrl}}/addresses/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses",
                 "{{id}}"
               ],
@@ -2797,12 +2771,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses/{{id}}",
+              "raw": "{{adminBaseUrl}}/addresses/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses",
                 "{{id}}"
               ],
@@ -2841,12 +2814,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses/{{id}}/hard-delete",
+              "raw": "{{adminBaseUrl}}/addresses/{{id}}/hard-delete",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses",
                 "{{id}}",
                 "hard-delete"
@@ -2886,12 +2858,11 @@
               }
             ],
             "url": {
-              "raw": "{{adminBaseUrl}}/admin/addresses/restore/{{id}}",
+              "raw": "{{adminBaseUrl}}/addresses/restore/{{id}}",
               "host": [
                 "{{adminBaseUrl}}"
               ],
               "path": [
-                "admin",
                 "addresses",
                 "restore",
                 "{{id}}"
