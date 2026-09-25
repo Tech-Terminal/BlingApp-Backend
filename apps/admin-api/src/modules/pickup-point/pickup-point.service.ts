@@ -1,8 +1,9 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository, IsNull } from 'typeorm';
-import { PickupPoint, BaseService, PaginatedResult } from '@libs/index';
+import { PickupPoint, BaseService, PaginatedResult, Area } from '@libs/index';
 import { MaidService } from '../maid/maid.service';
+import { AreaService } from '../location/area/area.service';
 import { CreatePickupPointDto } from './dto/create-pickup-point.dto';
 import { UpdatePickupPointDto } from './dto/update-pickup-point.dto';
 
@@ -12,6 +13,7 @@ export class PickupPointService extends BaseService<PickupPoint> {
     @InjectRepository(PickupPoint)
     repository: Repository<PickupPoint>,
     private readonly maidService: MaidService,
+    private readonly areaService: AreaService,
   ) {
     super(repository);
   }
@@ -27,7 +29,7 @@ export class PickupPointService extends BaseService<PickupPoint> {
       ...options,
       where,
       withDeleted: true,
-      relations: options?.relations ?? ['maids'],
+      relations: options?.relations ?? ['maids', 'areas', 'areas.governorate'],
       searchableFields: ['label', 'streetName', 'buildingNumber'],
     });
   }
@@ -35,15 +37,24 @@ export class PickupPointService extends BaseService<PickupPoint> {
   override async findOne(
     id: number | string,
     withDeleted = false,
-    relations: any = ['maids'],
+    relations: any = ['maids', 'areas', 'areas.governorate'],
     select?: any,
   ): Promise<PickupPoint> {
     return super.findOne(id, withDeleted, relations, select);
   }
 
   override async create(createDto: CreatePickupPointDto): Promise<PickupPoint> {
-    const { maidIds, ...data } = createDto;
-    const item = await super.create(data as any);
+    const { maidIds, areaIds, ...data } = createDto;
+
+    let areas: Area[] = [];
+    if (areaIds && areaIds.length > 0) {
+      areas = await this.areaService.findByIds(areaIds);
+    }
+
+    const item = await super.create({
+      ...data,
+      areas,
+    } as any);
 
     if (maidIds && maidIds.length > 0) {
       await this.maidService.attachToPickupPoint(maidIds, item.id);
@@ -56,8 +67,20 @@ export class PickupPointService extends BaseService<PickupPoint> {
     id: number,
     updateDto: UpdatePickupPointDto,
   ): Promise<PickupPoint> {
-    const { maidIds, ...data } = updateDto;
-    await super.update(id, data as any);
+    const { maidIds, areaIds, ...data } = updateDto;
+
+    const point = await this.findOne(id);
+
+    if (areaIds !== undefined) {
+      let areas: Area[] = [];
+      if (areaIds.length > 0) {
+        areas = await this.areaService.findByIds(areaIds);
+      }
+      point.areas = areas;
+    }
+
+    Object.assign(point, data);
+    await this.repository.save(point);
 
     if (maidIds !== undefined) {
       // Detach all maids previously assigned to this point

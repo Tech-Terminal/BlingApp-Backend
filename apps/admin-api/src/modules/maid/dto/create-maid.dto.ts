@@ -1,4 +1,4 @@
-import { IsNotEmpty, IsString, IsEmail, IsOptional, IsBoolean } from 'class-validator';
+import { IsNotEmpty, IsString, IsEmail, IsOptional, IsBoolean, IsNumber } from 'class-validator';
 import { IsUnique } from '@libs/index';
 
 export class CreateMaidDto {

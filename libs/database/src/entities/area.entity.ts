@@ -6,6 +6,7 @@ import {
   UpdateDateColumn,
   DeleteDateColumn,
   ManyToOne,
+  ManyToMany,
   JoinColumn,
   Index,
 } from 'typeorm';
@@ -30,6 +31,15 @@ export class Area {
   @Column({ name: 'name_ar' })
   nameAr!: string;
 
+  @Column('decimal', { precision: 10, scale: 7, nullable: true })
+  lat?: number;
+
+  @Column('decimal', { precision: 10, scale: 7, nullable: true })
+  long?: number;
+
+  @ManyToMany('PickupPoint', 'areas')
+  pickupPoints?: any[];
+
   @CreateDateColumn()
   createdAt!: Date;
 
@@ -39,3 +49,4 @@ export class Area {
   @DeleteDateColumn()
   deletedAt?: Date;
 }
+

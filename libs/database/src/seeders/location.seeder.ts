@@ -224,6 +224,219 @@ export const KUWAIT_LOCATIONS_DATA = [
   },
 ];
 
+export const AREA_COORDINATES: Record<string, { lat: number; long: number }> = {
+  // Ahmadi
+  'Abu Halifa': { lat: 29.1300, long: 48.1250 },
+  'Al Daher': { lat: 29.1750, long: 48.0800 },
+  'Al Dubaiya': { lat: 28.9400, long: 48.2400 },
+  'Al-Ahmadi': { lat: 29.0770, long: 48.0840 },
+  'Al-Maqwa': { lat: 29.1800, long: 47.9800 },
+  'Ali Subah Al-Salem': { lat: 28.9600, long: 48.1600 },
+  'East Ahmadi': { lat: 29.0800, long: 48.0900 },
+  'Eqaila': { lat: 29.1850, long: 48.1000 },
+  'Fahad Al-Ahmad': { lat: 29.1320, long: 48.1150 },
+  'Fahaheel': { lat: 29.0830, long: 48.1300 },
+  'Fintas': { lat: 29.1730, long: 48.1180 },
+  'Hadiya': { lat: 29.1200, long: 48.1000 },
+  'Jaber Al Ali': { lat: 29.1550, long: 48.0950 },
+  'Julaia': { lat: 28.8700, long: 48.2700 },
+  'Khairan': { lat: 28.6400, long: 48.3700 },
+  'Magwa': { lat: 29.1800, long: 47.9800 },
+  'Mahboula': { lat: 29.1450, long: 48.1200 },
+  'Mangaf': { lat: 29.1000, long: 48.1300 },
+  'Middle of Ahmadi': { lat: 29.0750, long: 48.0820 },
+  'mina abdulla': { lat: 29.0100, long: 48.1700 },
+  'Mina Al-Ahmadi Refinery': { lat: 29.0600, long: 48.1400 },
+  'North Ahmadi': { lat: 29.0900, long: 48.0800 },
+  'Port of Shuaiba': { lat: 29.0300, long: 48.1500 },
+  'Riqqah': { lat: 29.1450, long: 48.0980 },
+  'Sabah Al Ahmad Sea City': { lat: 28.6200, long: 48.3500 },
+  'Sabah Al Ahmed Natural Reserve': { lat: 29.6000, long: 47.8000 },
+  'Sabah Al Ahmed Residencial': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad 2': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad 3': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad 4': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad 5': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad Al-marine': { lat: 28.6200, long: 48.3500 },
+  'Sabah Al-Ahmad Investment': { lat: 28.7500, long: 48.0500 },
+  'Sabah Al-Ahmad Services': { lat: 28.7500, long: 48.0500 },
+  'Shalayhat Al Dubaiya': { lat: 28.9400, long: 48.2400 },
+  'Shalehat Bneder': { lat: 28.8900, long: 48.2700 },
+  "Shalehat Dba'ayeh": { lat: 28.9400, long: 48.2400 },
+  'Shalehat Mina Abdullah': { lat: 29.0100, long: 48.1700 },
+  'Shuaiba Industrial esterly': { lat: 29.0300, long: 48.1500 },
+  'Shuaiba Industrial Western': { lat: 29.0200, long: 48.1400 },
+  'South Ahmadi': { lat: 29.0650, long: 48.0850 },
+  'South-Sabahiya': { lat: 29.1100, long: 48.1100 },
+  'Subahiya': { lat: 29.1100, long: 48.1100 },
+  'Um AlHayman': { lat: 28.9600, long: 48.1600 },
+  'Wafra': { lat: 28.5800, long: 48.0800 },
+  'Wafra Farms': { lat: 28.5800, long: 48.0800 },
+
+  // Mubarak Al-Kabeer
+  'Abu Fatira': { lat: 29.2200, long: 48.0950 },
+  'Abu Hasaniya': { lat: 29.2100, long: 48.1050 },
+  'Airport': { lat: 29.2260, long: 47.9680 },
+  'Al-Adan': { lat: 29.2170, long: 48.0480 },
+  'Al-Masayel': { lat: 29.2450, long: 48.0850 },
+  'Fnaitees': { lat: 29.2350, long: 48.0950 },
+  'Messila': { lat: 29.2600, long: 48.0920 },
+  'Mubarak Al Kabeer': { lat: 29.2060, long: 48.0770 },
+  'Qosour': { lat: 29.2080, long: 48.0550 },
+  'Qurain': { lat: 29.2150, long: 48.0650 },
+  'Sabah Al Salem': { lat: 29.2540, long: 48.0670 },
+  'Sabhan': { lat: 29.2450, long: 48.0100 },
+  'Sabhan Industrial Area': { lat: 29.2450, long: 48.0100 },
+  'South Wista': { lat: 29.2300, long: 48.0300 },
+  'West Abu Ftirah Hirafyia': { lat: 29.2250, long: 48.0850 },
+  'Wista': { lat: 29.2300, long: 48.0300 },
+
+  // Farwaniya
+  'Abbasiya': { lat: 29.2630, long: 47.9300 },
+  'Abdullah Al-Mubarak': { lat: 29.2550, long: 47.9200 },
+  'Al-Shadadiya': { lat: 29.2350, long: 47.9450 },
+  'AlRabia': { lat: 29.2990, long: 47.9450 },
+  'AlRai': { lat: 29.3180, long: 47.9500 },
+  'alrihab': { lat: 29.2920, long: 47.9480 },
+  'Andalous': { lat: 29.3050, long: 47.9150 },
+  'Ardhiya': { lat: 29.3010, long: 47.9250 },
+  'Ardhiya 4': { lat: 29.3010, long: 47.9250 },
+  'Ardhiya 6': { lat: 29.3010, long: 47.9250 },
+  'Ardhiya Herafiya': { lat: 29.2950, long: 47.9200 },
+  'Ardiya Small Industrial': { lat: 29.2950, long: 47.9200 },
+  'Ardiya Storage Zone': { lat: 29.2950, long: 47.9200 },
+  'Ashbeliah': { lat: 29.2890, long: 47.9350 },
+  'Dajeej': { lat: 29.2730, long: 47.9680 },
+  'Establat Al Jahra': { lat: 29.3100, long: 47.7200 },
+  'Farwaniya': { lat: 29.2770, long: 47.9590 },
+  'Ferdous': { lat: 29.2980, long: 47.9000 },
+  'International Airport': { lat: 29.2260, long: 47.9680 },
+  'Ishbiliya': { lat: 29.2890, long: 47.9350 },
+  'Jleeb Al-Shyoukh': { lat: 29.2660, long: 47.9330 },
+  'Khaitan': { lat: 29.2980, long: 47.9720 },
+  'Mubarakiya Camps': { lat: 29.2600, long: 47.9800 },
+  'Mubarekiya Camps': { lat: 29.2600, long: 47.9800 },
+  'Omariah': { lat: 29.3020, long: 47.9600 },
+  'Riggae': { lat: 29.3150, long: 47.9300 },
+  'Sabah Al-Nasser': { lat: 29.2870, long: 47.9150 },
+  'Sheikh Saad Airport': { lat: 29.2400, long: 47.9750 },
+  'South Abdullah Al-Mubarak': { lat: 29.2450, long: 47.9150 },
+  'South Khaitan': { lat: 29.2900, long: 47.9700 },
+  'West Abdullah Al Mubarak Al Sabah': { lat: 29.2480, long: 47.9050 },
+
+  // Hawalli
+  "Al Bida'a": { lat: 29.3180, long: 48.0930 },
+  'Al-Shuhada': { lat: 29.2800, long: 48.0080 },
+  'Al-Siddeeq': { lat: 29.2900, long: 48.0100 },
+  'Anjafa': { lat: 29.3050, long: 48.0920 },
+  'Bayan': { lat: 29.3000, long: 48.0400 },
+  'Free Trade Zone': { lat: 29.3500, long: 47.9150 },
+  'Hateen': { lat: 29.2890, long: 47.9950 },
+  'Hawally': { lat: 29.3328, long: 48.0180 },
+  'Jabriya': { lat: 29.3180, long: 48.0280 },
+  'Maidan Hawally': { lat: 29.3400, long: 48.0300 },
+  'Ministries Area': { lat: 29.2820, long: 48.0050 },
+  'Mishref': { lat: 29.2770, long: 48.0550 },
+  'Mubarak Al-Abdullah (West Mishref)': { lat: 29.2680, long: 48.0380 },
+  'Nugra': { lat: 29.3400, long: 48.0100 },
+  'Rumaithiya': { lat: 29.3180, long: 48.0820 },
+  'Salam': { lat: 29.2970, long: 47.9900 },
+  'Salmiya': { lat: 29.3350, long: 48.0750 },
+  'Salwa': { lat: 29.2890, long: 48.0830 },
+  'Shaab': { lat: 29.3550, long: 48.0200 },
+  'South Surra': { lat: 29.2850, long: 48.0050 },
+  'Zahra': { lat: 29.2810, long: 48.0190 },
+
+  // Jahra
+  'Al Hejen': { lat: 29.2300, long: 47.7400 },
+  'Al Matla`': { lat: 29.4700, long: 47.6300 },
+  'Al Sulaibiya Industrial 1': { lat: 29.2850, long: 47.8150 },
+  'Al Sulaibiya Industrial 2': { lat: 29.2850, long: 47.8150 },
+  'Amghara': { lat: 29.2900, long: 47.7400 },
+  'Amghara Industry': { lat: 29.2900, long: 47.7400 },
+  'Jahra': { lat: 29.3370, long: 47.6580 },
+  'Jahra Camps': { lat: 29.3370, long: 47.6580 },
+  'Jahra-Industrial': { lat: 29.3370, long: 47.6580 },
+  'Jawakher Al Jahra': { lat: 29.3100, long: 47.6900 },
+  'Kabd': { lat: 29.1900, long: 47.7800 },
+  'Kazima': { lat: 29.4200, long: 47.7500 },
+  'Naeem': { lat: 29.3500, long: 47.6650 },
+  'Naseem': { lat: 29.3300, long: 47.7000 },
+  'North West Jahra': { lat: 29.3600, long: 47.6500 },
+  'Oyoun': { lat: 29.3280, long: 47.6800 },
+  'Qasr': { lat: 29.3400, long: 47.6700 },
+  'Rajim Khashman': { lat: 29.4000, long: 47.5000 },
+  'Rawdatain': { lat: 29.9500, long: 47.6800 },
+  'Saad AlAbdullah': { lat: 29.3450, long: 47.7050 },
+  'Subiyah': { lat: 29.5800, long: 48.1000 },
+  'Sulaibiya': { lat: 29.2850, long: 47.8150 },
+  'Sulaibiya Agricultural': { lat: 29.2850, long: 47.8150 },
+  'Sulaibiya Industrial': { lat: 29.2850, long: 47.8150 },
+  'Sulaibiya Industrial 2': { lat: 29.2850, long: 47.8150 },
+  'Taima': { lat: 29.3250, long: 47.6850 },
+  'Waha': { lat: 29.3250, long: 47.6650 },
+
+  // Kuwait City (Capital)
+  'Abdulla Al-Salem': { lat: 29.3580, long: 47.9710 },
+  'Adailiya': { lat: 29.3370, long: 47.9760 },
+  'Al-Nahda': { lat: 29.3000, long: 47.8200 },
+  'Al-Sour Gardens': { lat: 29.3650, long: 47.9700 },
+  'Bneid Al Qar': { lat: 29.3760, long: 48.0020 },
+  'Daiya': { lat: 29.3680, long: 48.0010 },
+  'Dasma': { lat: 29.3670, long: 47.9910 },
+  'Dasman': { lat: 29.3880, long: 48.0050 },
+  'Doha': { lat: 29.3550, long: 47.8100 },
+  'Doha Chalets': { lat: 29.3650, long: 47.8000 },
+  'Faiha': { lat: 29.3510, long: 47.9690 },
+  'Ghornata': { lat: 29.3200, long: 47.8400 },
+  'Hessah Al-Mubarak District': { lat: 29.3780, long: 48.0080 },
+  'Jaber Al Ahmad': { lat: 29.3430, long: 47.7810 },
+  'Jibla': { lat: 29.3730, long: 47.9690 },
+  'Kaifan': { lat: 29.3450, long: 47.9480 },
+  'Khaldiya': { lat: 29.3360, long: 47.9570 },
+  'Kuwait City': { lat: 29.3759, long: 47.9774 },
+  'Mansouriya': { lat: 29.3640, long: 47.9820 },
+  'Mina Doha': { lat: 29.3600, long: 47.8150 },
+  'Mirgab': { lat: 29.3680, long: 47.9780 },
+  'Mubarakiya': { lat: 29.3780, long: 47.9750 },
+  'Mubarakyia': { lat: 29.3780, long: 47.9750 },
+  'North West Al-Sulaibikhat': { lat: 29.3350, long: 47.8300 },
+  'Nuzha': { lat: 29.3500, long: 47.9850 },
+  'Qadsiya': { lat: 29.3600, long: 48.0000 },
+  'Qairawan': { lat: 29.3110, long: 47.8360 },
+  'Qibla': { lat: 29.3730, long: 47.9690 },
+  'Qortuba': { lat: 29.3190, long: 47.9940 },
+  'Rai': { lat: 29.3180, long: 47.9500 },
+  'Rawda': { lat: 29.3400, long: 47.9900 },
+  'Salhiya': { lat: 29.3700, long: 47.9710 },
+  'Sawabir': { lat: 29.3750, long: 47.9880 },
+  'Shamiya': { lat: 29.3550, long: 47.9600 },
+  'Sharq': { lat: 29.3850, long: 47.9900 },
+  'Shuwaikh': { lat: 29.3500, long: 47.9300 },
+  'Shuwaikh Administrative': { lat: 29.3480, long: 47.9320 },
+  'Shuwaikh Educational': { lat: 29.3400, long: 47.9300 },
+  'Shuwaikh Industrial': { lat: 29.3450, long: 47.9350 },
+  'Shuwaikh Industrial 1': { lat: 29.3450, long: 47.9350 },
+  'Shuwaikh Industrial 2': { lat: 29.3450, long: 47.9350 },
+  'Shuwaikh Industrial 3': { lat: 29.3450, long: 47.9350 },
+  'Shuwaikh Medical': { lat: 29.3500, long: 47.9200 },
+  'Shuwaikh Port': { lat: 29.3560, long: 47.9250 },
+  'Shuwaikh Residential': { lat: 29.3520, long: 47.9400 },
+  'Sulaibikhat': { lat: 29.3240, long: 47.8590 },
+  'Surra': { lat: 29.3120, long: 48.0040 },
+  'Yarmouk': { lat: 29.3170, long: 47.9700 },
+};
+
+const GOV_FALLBACKS: Record<string, { lat: number; long: number }> = {
+  'Ahmadi': { lat: 29.0770, long: 48.0840 },
+  'Hawalli': { lat: 29.3328, long: 48.0280 },
+  'Farwaniya': { lat: 29.2770, long: 47.9590 },
+  'Mubarak Al-Kabeer': { lat: 29.2150, long: 48.0650 },
+  'Jahra': { lat: 29.3370, long: 47.6580 },
+  'Kuwait City': { lat: 29.3759, long: 47.9774 },
+};
+
 export const seedLocations = async (dataSource: DataSource): Promise<void> => {
   console.log('📍 Seeding Kuwait Governorates and Areas...');
   const govRepo = dataSource.getRepository(Governorate);
@@ -250,6 +463,8 @@ export const seedLocations = async (dataSource: DataSource): Promise<void> => {
     }
 
     for (const areaData of locData.areas) {
+      const coords = AREA_COORDINATES[areaData.nameEn] || GOV_FALLBACKS[locData.governorate.nameEn] || { lat: 29.3759, long: 47.9774 };
+
       let area = await areaRepo.findOne({
         where: {
           governorateId: gov.id,
@@ -262,12 +477,25 @@ export const seedLocations = async (dataSource: DataSource): Promise<void> => {
           governorateId: gov.id,
           nameEn: areaData.nameEn,
           nameAr: areaData.nameAr,
+          lat: coords.lat,
+          long: coords.long,
         });
         await areaRepo.save(area);
         totalAreas++;
-      } else if (area.nameAr !== areaData.nameAr) {
-        area.nameAr = areaData.nameAr;
-        await areaRepo.save(area);
+      } else {
+        let changed = false;
+        if (area.nameAr !== areaData.nameAr) {
+          area.nameAr = areaData.nameAr;
+          changed = true;
+        }
+        if (coords && (!area.lat || !area.long)) {
+          area.lat = coords.lat;
+          area.long = coords.long;
+          changed = true;
+        }
+        if (changed) {
+          await areaRepo.save(area);
+        }
       }
     }
   }

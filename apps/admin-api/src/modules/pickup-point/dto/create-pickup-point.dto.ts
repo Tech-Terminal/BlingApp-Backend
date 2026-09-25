@@ -21,21 +21,6 @@ export class CreatePickupPointDto {
   @IsOptional()
   buildingNumber?: string;
 
-  @IsNumber()
-  @IsOptional()
-  @Type(() => Number)
-  lat?: number;
-
-  @IsNumber()
-  @IsOptional()
-  @Type(() => Number)
-  long?: number;
-
-  @IsNumber()
-  @IsOptional()
-  @Type(() => Number)
-  distance?: number; // Distance in Km (radius)
-
   @IsBoolean()
   @IsOptional()
   isActive?: boolean;
@@ -44,4 +29,9 @@ export class CreatePickupPointDto {
   @IsNumber({}, { each: true })
   @IsOptional()
   maidIds?: number[];
+
+  @IsArray()
+  @IsNumber({}, { each: true })
+  @IsOptional()
+  areaIds?: number[];
 }

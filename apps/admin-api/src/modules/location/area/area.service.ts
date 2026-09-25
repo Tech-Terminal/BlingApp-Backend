@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Repository } from 'typeorm';
+import { Repository, In } from 'typeorm';
 import { Area } from '@libs/database/src/entities/area.entity';
 import { BaseService, PaginatedResult } from '@libs/index';
 
@@ -39,5 +39,10 @@ export class AreaService extends BaseService<Area> {
 
   async countByGovernorate(governorateId: number): Promise<number> {
     return this.repository.count({ where: { governorateId } });
+  }
+
+  async findByIds(ids: number[]): Promise<Area[]> {
+    if (!ids || ids.length === 0) return [];
+    return this.repository.findBy({ id: In(ids) });
   }
 }
