@@ -27,4 +27,8 @@ export class CreateMaidDto {
   @IsBoolean()
   @IsOptional()
   isActive?: boolean;
+
+  @IsNumber()
+  @IsOptional()
+  pickupPointId?: number;
 }

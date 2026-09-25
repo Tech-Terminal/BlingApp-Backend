@@ -12,6 +12,7 @@ import { LocationModule } from './modules/location/location.module';
 import { ClientModule } from './modules/client/client.module';
 import { AddressModule } from './modules/address/address.module';
 import { MaidModule } from './modules/maid/maid.module';
+import { PickupPointModule } from './modules/pickup-point/pickup-point.module';
 import { AuthMiddleware } from './modules/auth/auth.middleware';
 import { PermissionsGuard } from './modules/auth/guards/permissions.guard';
 import { PUBLIC_ROUTES } from './constants/public-routes.constant';
@@ -37,6 +38,7 @@ import { StatisticsModule } from './modules/statistics/statistics.module';
     ClientModule,
     AddressModule,
     MaidModule,
+    PickupPointModule,
   ],
   providers: [
     {

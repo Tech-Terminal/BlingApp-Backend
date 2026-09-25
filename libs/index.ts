@@ -14,6 +14,7 @@ export * from './database/src/entities/governorate.entity';
 export * from './database/src/entities/area.entity';
 export * from './database/src/entities/address.entity';
 export * from './database/src/entities/maid.entity';
+export * from './database/src/entities/pickup-point.entity';
 
 // enums
 

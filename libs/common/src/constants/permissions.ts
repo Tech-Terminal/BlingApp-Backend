@@ -16,7 +16,8 @@ export enum RESOURCES {
     AREA = 'area',
     CLIENT = 'client',
     ADDRESS = 'address',
-    MAID = 'maid'
+    MAID = 'maid',
+    PICKUP_POINT = 'pickup_point'
 }
 
 // Optional map (used for DTOs and Database so roles can have only a few resources)
@@ -82,6 +83,15 @@ export const systemPermissions: RolePermissions = {
         ACTIONS.RESTORE
     ],
     [RESOURCES.MAID]: [
+        ACTIONS.LIST_VIEW,
+        ACTIONS.DETAILED_VIEW,
+        ACTIONS.CREATE,
+        ACTIONS.UPDATE,
+        ACTIONS.DELETE_SOFT,
+        ACTIONS.DELETE_HARD,
+        ACTIONS.RESTORE
+    ],
+    [RESOURCES.PICKUP_POINT]: [
         ACTIONS.LIST_VIEW,
         ACTIONS.DETAILED_VIEW,
         ACTIONS.CREATE,
